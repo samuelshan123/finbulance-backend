@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acservices",
+  "info": {
+    "name": "acservices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "capacity": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "user_id": {
+      "via": "ac",
+      "model": "fb-users"
+    },
+    "status": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    }
+  }
+}

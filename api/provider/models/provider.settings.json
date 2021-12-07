@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "providers",
+  "info": {
+    "name": "provider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "note": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "prov_id": {
+      "via": "provider",
+      "model": "fb-users"
+    },
+    "req_id": {
+      "via": "requester",
+      "model": "fb-users"
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

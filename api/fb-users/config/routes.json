@@ -1,0 +1,86 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fb-users",
+      "handler": "fb-users.find",
+      "config": {
+       "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
+      "path": "/hello",
+      "handler": "hello.hello",
+      "config": {
+        "policies": []
+      }
+    },    
+    {
+      "method": "GET",
+      "path": "/fb-users/count",
+      "handler": "fb-users.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fb-users/:id",
+      "handler": "fb-users.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fb-users",
+      "handler": "fb-users.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "handler": "fb-users.register",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/update",
+      "handler": "fb-users.updateuser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/login",
+      "handler": "fb-users.login",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fb-users/:id",
+      "handler": "fb-users.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fb-users/:id",
+      "handler": "fb-users.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
+ 

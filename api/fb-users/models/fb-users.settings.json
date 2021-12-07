@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fb_users",
+  "info": {
+    "name": "fb_users",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "password": {
+      "type": "password"
+    },
+    "type": {
+      "type": "string"
+    },
+    "servicename": {
+      "type": "string"
+    },
+    "orgname": {
+      "type": "string"
+    },
+    "pan": {
+      "type": "string"
+    },
+    "construction": {
+      "collection": "construction",
+      "via": "user_id"
+    },
+    "ac": {
+      "via": "user_id",
+      "collection": "acservices"
+    },
+    "cabservices": {
+      "via": "user_id",
+      "collection": "cabservices"
+    },
+    "interior": {
+      "via": "user_id",
+      "collection": "interiors"
+    },
+    "finance": {
+      "via": "user_id",
+      "collection": "finance"
+    },
+    "provider": {
+      "via": "prov_id",
+      "collection": "provider"
+    },
+    "requester": {
+      "via": "req_id",
+      "collection": "provider"
+    }
+  }
+}

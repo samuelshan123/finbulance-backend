@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cabservices",
+  "info": {
+    "name": "cabservices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pickup": {
+      "type": "string"
+    },
+    "person": {
+      "type": "integer"
+    },
+    "vehicle": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "trip": {
+      "type": "string"
+    },
+    "pickup_date": {
+      "type": "string"
+    },
+    "return_date": {
+      "type": "string"
+    },
+    "user_id": {
+      "via": "cabservices",
+      "model": "fb-users"
+    },
+    "status": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "constructions",
+  "info": {
+    "name": "construction",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sqrft": {
+      "type": "integer"
+    },
+    "budget": {
+      "type": "decimal"
+    },
+    "contract": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "months": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "user_id": {
+      "via": "construction",
+      "model": "fb-users"
+    }
+  }
+}

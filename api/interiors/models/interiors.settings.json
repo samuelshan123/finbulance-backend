@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interiors",
+  "info": {
+    "name": "interiors",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "work": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "decimal"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "text"
+    },
+    "feet": {
+      "type": "string"
+    },
+    "user_id": {
+      "via": "interior",
+      "model": "fb-users"
+    },
+    "status": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    }
+  }
+}

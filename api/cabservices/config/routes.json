@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cabservices",
+      "handler": "cabservices.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cabservices/count",
+      "handler": "cabservices.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cabservices/:id",
+      "handler": "cabservices.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cabservices",
+      "handler": "cabservices.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cabservices/update",
+      "handler": "cabservices.updatecab",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cabservices/:id",
+      "handler": "cabservices.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cabservices/:id",
+      "handler": "cabservices.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

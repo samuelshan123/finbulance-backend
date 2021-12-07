@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finances",
+  "info": {
+    "name": "finance",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "intrest": {
+      "type": "decimal"
+    },
+    "time": {
+      "type": "string"
+    },
+    "user_id": {
+      "via": "finance",
+      "model": "fb-users"
+    },
+    "status": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    }
+  }
+}
